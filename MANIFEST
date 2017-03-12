@@ -16,6 +16,7 @@ t/big_value.t
 t/commands.t
 t/key_ref.t
 t/magic.t
+t/malformed.t
 t/namespace.t
 t/nowait.t
 t/noreply.t
@@ -45,5 +46,3 @@ src/poll_select.c
 src/poll_select.h
 src/addrinfo_hostent.c
 src/addrinfo_hostent.h
-META.yml                                 Module YAML meta-data (added by MakeMaker)
-META.json                                Module JSON meta-data (added by MakeMaker)

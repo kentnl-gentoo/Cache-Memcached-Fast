@@ -2,23 +2,16 @@
 abstract: 'Perl client for B<memcached>, in C language'
 author:
   - 'Tomash Brechko <tomash.brechko@gmail.com>'
-build_requires:
-  ExtUtils::MakeMaker: 0
-configure_requires:
-  ExtUtils::MakeMaker: 0
-dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.72, CPAN::Meta::Converter version 2.132140'
-license: unknown
+build_requires: {}
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 6.005, CPAN::Meta::Converter version 2.150005'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Cache-Memcached-Fast
-no_index:
-  directory:
-    - t
-    - inc
 requires:
-  Test::More: 0
+  Storable: '0'
 resources:
-  repository: https://github.com/kroki/Cache-Memcached-Fast
-version: 0.23
+  repository: git://github.com/JRaspass/Cache-Memcached-Fast.git
+version: '0.24'

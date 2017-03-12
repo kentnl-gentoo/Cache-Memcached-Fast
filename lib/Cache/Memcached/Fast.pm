@@ -14,11 +14,11 @@ Cache::Memcached::Fast - Perl client for B<memcached>, in C language
 
 =head1 VERSION
 
-Version 0.23.
+Version 0.24.
 
 =cut
 
-our $VERSION = '0.23';
+our $VERSION = '0.24';
 
 
 =head1 SYNOPSIS
@@ -589,11 +589,9 @@ sub new {
 
     my $memd = Cache::Memcached::Fast::_new($class, $conf);
 
-    if (eval "require Scalar::Util") {
-        my $context = [$memd, $conf];
-        Scalar::Util::weaken($context->[0]);
-        $instance{$$memd} = $context;
-    }
+    my $context = [$memd, $conf];
+    _weaken($context->[0]);
+    $instance{$$memd} = $context;
 
     return $memd;
 }
@@ -1463,7 +1461,7 @@ You can also look for information at:
 
 =item * Project home
 
-L<http://openhack.ru/Cache-Memcached-Fast>
+L<https://github.com/kroki/Cache-Memcached-Fast>
 
 
 =item * RT: CPAN's request tracker
