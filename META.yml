@@ -3,7 +3,7 @@ abstract: 'Perl client for B<memcached>, in C language'
 author:
   - 'Tomash Brechko <tomash.brechko@gmail.com>'
 build_requires: {}
-dynamic_config: 0
+dynamic_config: '1'
 generated_by: 'Dist::Zilla version 6.005, CPAN::Meta::Converter version 2.150005'
 license: perl
 meta-spec:
@@ -14,4 +14,4 @@ requires:
   Storable: '0'
 resources:
   repository: git://github.com/JRaspass/Cache-Memcached-Fast.git
-version: '0.24'
+version: '0.25'
